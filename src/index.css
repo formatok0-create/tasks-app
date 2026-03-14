@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .glass-card {
+    background: rgba(175, 37, 244, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(175, 37, 244, 0.1);
+  }
+  .glowing-gradient {
+    background: linear-gradient(135deg, #af25f4 0%, #f425b4 50%, #f47a25 100%);
+  }
+  .text-gradient {
+    background: linear-gradient(135deg, #af25f4 0%, #f425b4 50%, #f47a25 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+body {
+  min-height: max(884px, 100dvh);
+}
